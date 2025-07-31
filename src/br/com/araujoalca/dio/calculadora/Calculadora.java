@@ -11,10 +11,10 @@ public class Calculadora {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Digite o primeiro valor: ");
-        a = scan.nextInt();
+        a = 3; //scan.nextInt();
 
         System.out.println("Digite o segundo valor: ");
-        b = scan.nextInt();
+        b = 5; //can.nextInt();
 
         scan.close();
 
@@ -27,6 +27,33 @@ public class Calculadora {
         System.out.println(a + " - " + b + " = " + subtracao);
         System.out.println(a + " * " + b + " = " + multiplicacao);
         System.out.println(a + " / " + b + " = " + divisao);
+
+        int inteiroI = 10;
+        long longL, longL2;
+
+        longL2 = 10;
+        longL = (long) longL2;
+        System.out.println("Upcasting explícito não dá erro: longL = (long) " + longL);
+
+
+        char caractere = 'B';
+        long numero;
+
+        numero = 'a';
+        numero = caractere;
+        //caractere = numero;
+        caractere = 67;
+
+        System.out.println("numero = " + numero);
+        System.out.println("caractere = " + caractere);
+
+        numero = 67;
+
+        if (caractere == numero)
+            System.out.println(caractere + " = " + numero);
+        else
+            System.out.println(caractere + " != " + numero);
+
 
     }
 
